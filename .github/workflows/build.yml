@@ -1,0 +1,17 @@
+name: build-test
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: ./.github/actions/prepare
+    - name: use pnpm to build API Server
+      run: |
+       pnpm build

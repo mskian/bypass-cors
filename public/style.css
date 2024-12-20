@@ -1,0 +1,134 @@
+html, body {
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: "Geist Mono", serif;
+  word-wrap: break-word;
+}
+body {
+	background-color: #ddd4b3;
+	color: #121212;
+  font-family: 16px;
+	padding-bottom: 20px;
+}
+.title {
+  font-family: "Geist Mono", serif;
+    text-align: center;
+  }
+  select {
+    font-family: "Geist Mono", serif;
+  }
+  option {
+    font-family: "Geist Mono", serif;
+  }
+  .input {
+    font-family: "Geist Mono", serif;
+    
+  }
+  textarea {
+    font-family: "Geist Mono", serif;
+  }
+  .button {
+    font-family: "Geist Mono", serif;
+    margin-top: 10px;
+  }
+pre {
+  background-color: #1e0922;
+	font-family: "Geist Mono", serif;
+	color: #7bed9f;
+	padding: 15px;
+	border-radius: 5px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+  word-wrap: break-word;
+}
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f57d7d;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider::before {
+    position: absolute;
+    content: '';
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #e9e3e3;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #35a00a;
+  }
+  
+  input:checked + .slider::before {
+    transform: translateX(14px);
+  }
+  body.dark-mode {
+    background-color: #392e4a;
+    color: #121212;
+    padding-bottom: 20px;
+  }
+  .dark-mode pre {
+    background-color: #291010;
+    color: #7bed9f;
+    padding: 15px;
+	  border-radius: 5px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  .text-all {
+    font-family: "Geist Mono", serif;
+    color: #041242;
+  }
+  .title {
+    font-family: "Geist Mono", serif;
+    color: #1e201e;
+  }
+  .dark-mode .title {
+    font-family: "Geist Mono", serif;
+    color: #82f395;
+  }
+  .dark-mode .text-all {
+    font-family: "Geist Mono", serif;
+    color: #f1d75f;
+  }
+  input::-webkit-input-placeholder {
+    color: #1f0505;
+  }
+  
+  input:-moz-placeholder {
+    color: #1f0505;
+  }
+  
+  input::-moz-placeholder {
+    color: #1f0505;
+  }
+  
+  input:-ms-input-placeholder {
+    color: #1f0505;
+  }

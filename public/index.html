@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link href="/icon-192.png" rel="icon" sizes="192x192" type="image/png">
+  <link href="/apple-touch-icon.png" rel="apple-touch-icon">
+  <title>CORS Bypass Proxy - Easy and Fast Cross-Origin Requests</title>
+  <meta name="description" content="Easily bypass CORS restrictions with a simple proxy API. Make cross-origin requests quickly and effortlessly for better API access." />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.2/css/bulma.min.css" integrity="sha512-RpeJZX3aH5oZN3U3JhE7Sd+HG8XQsqmP3clIbu4G28p668yNsRNj3zMASKe1ATjl/W80wuEtCx2dFA8xaebG5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+      <div class="column is-three-fifths">
+      <h1 class="title is-5 mt-2 mb-6">CORS Bypass Proxy 🚀</h1>
+      <div class="field has-addons mt-4 mb-4">
+      <p class="text-all mb-2 is-size-6 mr-2"><b>Change Theme:</b></p>
+      <div class="toggle-container">
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+    </div>
+      <div class="field has-addons mt-4 mb-4">
+        <label class="label mr-2 text-all is-size-6">Enable Proxy: </label>
+        <div class="control">
+          <label class="switch">
+            <input type="checkbox" id="proxyToggle">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="field mt-4">
+        <label class="label text-all">Enter URL:</label>
+        <div class="control">
+          <input id="urlInput" class="input is-warning" type="url" placeholder="https://api.example.com">
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <button id="submitButton" class="button is-info">Fetch Data</button>
+        </div>
+      </div>
+      <div id="output" class="content mt-4"></div>
+    </div>
+    </div>
+    </div>
+  </section>
+<script>
+    const canonicalLink = document.createElement('link');
+    canonicalLink.setAttribute('rel', 'canonical');
+    canonicalLink.setAttribute('href', window.location.href);
+
+  document.head.appendChild(canonicalLink);
+    const toggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+
+    function applyTheme(theme) {
+        if (theme === 'dark') {
+            body.classList.add('dark-mode');
+            toggle.checked = true;
+        } else {
+            body.classList.remove('dark-mode');
+            toggle.checked = false;
+        }
+    }
+
+    function initTheme() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            applyTheme(savedTheme);
+        } else {
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            applyTheme(prefersDark ? 'dark' : 'light');
+        }
+    }
+
+    toggle.addEventListener('change', () => {
+        const newTheme = toggle.checked ? 'dark' : 'light';
+        applyTheme(newTheme);
+        localStorage.setItem('theme', newTheme);
+    });
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        const newSystemTheme = e.matches ? 'dark' : 'light';
+        const savedTheme = localStorage.getItem('theme');
+        if (!savedTheme) {
+            applyTheme(newSystemTheme);
+        }
+    });
+  
+    initTheme();
+</script>
+<script src="main.js"></script>
+</body>
+</html>
