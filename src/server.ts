@@ -3,6 +3,7 @@ import path from 'path';
 import cors from 'cors';
 import corsProxy from './routes/corsProxy';
 import errorHandler from './utils/error';
+import { setSecureHeaders } from "./utils/secureHeaders";
 
 const app: Application = express();
 const PORT = process.env.PORT || 6028;
@@ -12,6 +13,8 @@ app.use(express.json());
 app.use(express.urlencoded({
     extended: true
 }));
+app.use(setSecureHeaders);
+app.disable("x-powered-by");
 
 app.use(express.static(path.join(__dirname, '..', 'public')));
 app.get('/', (req: Request, res: Response) => {
