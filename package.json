@@ -15,7 +15,7 @@
     "user-agents": "^1.1.532"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.17",
+    "@types/cors": "^2.8.18",
     "@types/express": "^5.0.1",
     "@types/user-agents": "^1.0.4",
     "nodemon": "^3.1.10",
