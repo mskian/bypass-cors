@@ -12,7 +12,7 @@
     "axios": "^1.10.0",
     "cors": "^2.8.5",
     "express": "^5.1.0",
-    "user-agents": "^1.1.581"
+    "user-agents": "^1.1.587"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
