@@ -18,8 +18,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0
       user-agents:
-        specifier: ^1.1.650
-        version: 1.1.650
+        specifier: ^1.1.651
+        version: 1.1.651
     devDependencies:
       '@types/cors':
         specifier: ^2.8.19
@@ -563,8 +563,8 @@ packages:
     resolution: {integrity: sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==}
     engines: {node: '>= 0.8'}
 
-  user-agents@1.1.650:
-    resolution: {integrity: sha512-s1DZODdWZXPdQU57iYhScdY/v9JA5fVGo0cHGzHxlhIjxGr4OdKiH1iJ8Y4/rupW4Wccrqd9L5D8DoFVcbdHSQ==}
+  user-agents@1.1.651:
+    resolution: {integrity: sha512-oNPQOXaY9V3LV2GvYlzoEl2st5DFHlAEFz6eTrsEcZnnThvi9ORPwKjJejloOzxdhtnGZlUs5iDrAXQFpmbk0Q==}
 
   v8-compile-cache-lib@3.0.1:
     resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
@@ -1136,7 +1136,7 @@ snapshots:
 
   unpipe@1.0.0: {}
 
-  user-agents@1.1.650:
+  user-agents@1.1.651:
     dependencies:
       lodash.clonedeep: 4.5.0
 
