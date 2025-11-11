@@ -18,7 +18,7 @@
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.5",
     "@types/user-agents": "^1.0.4",
-    "nodemon": "^3.1.10",
+    "nodemon": "^3.1.11",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
