@@ -9,7 +9,7 @@ runs:
         version: 9.15.9
     - uses: actions/setup-node@v4
       with:
-        node-version: '22.21.1'
+        node-version: '22.22.0'
         cache: pnpm
     - run: pnpm install
       shell: bash
