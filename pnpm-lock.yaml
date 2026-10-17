@@ -18,8 +18,8 @@ importers:
         specifier: ^5.3.0
         version: 5.3.0(supports-color@5.5.0)
       user-agents:
-        specifier: ^1.1.675
-        version: 1.1.675
+        specifier: ^2.1.216
+        version: 2.1.216
     devDependencies:
       '@types/cors':
         specifier: ^2.8.19
@@ -574,8 +574,8 @@ packages:
     resolution: {integrity: sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==}
     engines: {node: '>= 0.8'}
 
-  user-agents@1.1.675:
-    resolution: {integrity: sha512-ZQnegGfKf083joYjEZuLgjJtpDHW5IhOXWCw/25yx82ZvctDcYp/PQsWNShH4Dq00SuDYaPm0qndVBn6axBpvA==}
+  user-agents@2.1.216:
+    resolution: {integrity: sha512-QpFYt48WidvBajzn1f78KlQyuGCgMvp4GocRqoz1Eg8dadySedzEKAAKGj+vAnDbHhbV7Sf0ZMBAB1VkRuC6cQ==}
     engines: {node: '>=18'}
 
   v8-compile-cache-lib@3.0.1:
@@ -1163,7 +1163,7 @@ snapshots:
 
   unpipe@1.0.0: {}
 
-  user-agents@1.1.675: {}
+  user-agents@2.1.216: {}
 
   v8-compile-cache-lib@3.0.1: {}
 
